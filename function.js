@@ -1,6 +1,6 @@
 window.function = async function(url, csva, csvb) {
     if (url.value === undefined) return "Enter your url";
-    if (csva.value === undefined) return "Enter your csv1";
+    if (csva.value === undefined) return "Enter your csva";
     if (csvb.value === undefined) return "Enter your csvb";
 
     let webhook = url.value;
