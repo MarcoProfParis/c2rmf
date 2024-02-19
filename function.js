@@ -1,19 +1,19 @@
-window.function = async function(url, pwd, email) {
-    if (url.value === undefined) return undefined;
-    if (email.value === undefined) return "Enter your Email";
-    if (pwd.value === undefined) return undefined;
+window.function = async function(url, csv1, csv2) {
+    if (url.value === undefined) return "Enter your url";
+    if (csv1.value === undefined) return "Enter your csv1";
+    if (csv2.value === undefined) return "Enter your csv2";
 
     let webhook = url.value;
     const ch = email.value;
     const raw = JSON.stringify({
         params: {
-            pwd: pwd.value,
-            email: ch
+            csv1: csv1.value,
+            csv2: csv2.value
         }
     });
 
     // Append the password as a query parameter to the webhook URL
-    webhook += `?pwd=${encodeURIComponent(pwd.value)}`;
+    // webhook += `?pwd=${encodeURIComponent(pwd.value)}`;
 
     const requestOptions = {
         method: 'POST',
