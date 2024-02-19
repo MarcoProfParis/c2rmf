@@ -1,7 +1,7 @@
 window.function = async function(url, csva, csvb) {
     if (url.value === undefined) return "Enter your url";
     if (csva.value === undefined) return "Enter your csv1";
-    if (csvb.value === undefined) return "Enter your csv2";
+    if (csvb.value === undefined) return "Enter your csvb";
 
     let webhook = url.value;
     const ch = email.value;
