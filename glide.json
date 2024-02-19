@@ -10,13 +10,13 @@
       "type": "string"
     },
     {
-      "name": "pwd",
-      "displayName": "password à faire passer",
+      "name": "csv1",
+      "displayName": "Premier fichier csv",
       "type": "string"
     },    
     {
-      "name": "email",
-      "displayName": "email à transmettre",
+      "name": "csv2",
+      "displayName": "second fichier csv",
       "type": "string"
     }
   ],
