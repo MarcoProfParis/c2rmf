@@ -4,7 +4,7 @@ window.function = async function(url, csva, csvb) {
     if (csvb.value === undefined) return "Enter your csvb";
 
     let webhook = url.value;
-    const ch = email.value;
+    // const ch = email.value;
     const raw = JSON.stringify({
         params: {
             csva: csva.value,
