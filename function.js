@@ -1,14 +1,14 @@
-window.function = async function(url, csv1, csv2) {
+window.function = async function(url, csva, csvb) {
     if (url.value === undefined) return "Enter your url";
-    if (csv1.value === undefined) return "Enter your csv1";
-    if (csv2.value === undefined) return "Enter your csv2";
+    if (csva.value === undefined) return "Enter your csv1";
+    if (csvb.value === undefined) return "Enter your csv2";
 
     let webhook = url.value;
     const ch = email.value;
     const raw = JSON.stringify({
         params: {
-            csv1: csv1.value,
-            csv2: csv2.value
+            csva: csva.value,
+            csvb: csvb.value
         }
     });
 
